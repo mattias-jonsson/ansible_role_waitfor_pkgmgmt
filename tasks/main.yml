@@ -1,0 +1,17 @@
+---
+
+- name: Include variables specific for the distribution.
+  include_vars: "{{ item }}"
+  with_items:
+    - "{{ ansible_os_family }}.yml"
+
+- name: wait for blocking processes
+  become: true
+  ansible.builtin.shell: |
+    if lslocks -no PATH | grep -qE '{{ ansible_role_waitfor_pkgmgmt_blockingproc_list | join('|') }}'; then exit 1; else exit 0; fi
+  register: ansible_role_waitfor_pkgmgmt_blockingproc
+  until: ansible_role_waitfor_pkgmgmt_blockingproc.rc == 0
+  retries: 30
+  delay: 10
+  failed_when: ansible_role_waitfor_pkgmgmt_blockingproc.rc != 0
+  changed_when: false

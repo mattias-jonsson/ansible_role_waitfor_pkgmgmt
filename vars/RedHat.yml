@@ -1,0 +1,11 @@
+---
+
+ansible_role_waitfor_pkgmgmt_blockingproc_list:
+  - \/var\/cache\/dnf
+  - \/var\/cache\/yum
+  - \/var\/lib\/dnf
+  - \/var\/lib\/fwupd
+  - \/var\/lib\/PackageKit
+  - \/var\/lib\/rpm
+  - \/var\/lib\/selinux
+  - \/var\/lib\/yum

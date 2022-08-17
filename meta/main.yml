@@ -1,0 +1,13 @@
+---
+
+galaxy_info:
+  author: Mattias Jonsson
+  description: An Ansible role that waits for packagemanagement processes.
+  min_ansible_version: 2.9.27
+  role_name: ansible_role_waitfor_pkgmgmt
+  license: MIT
+  platforms:
+  - name: EL
+  - name: Fedora
+  - name: Debian
+  - name: Ubuntu

@@ -1,0 +1,4 @@
+---
+
+ansible_role_waitfor_pkgmgmt_retries: 30
+ansible_role_waitfor_pkgmgmt_delay: 10
