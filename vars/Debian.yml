@@ -8,9 +8,3 @@ ansible_role_waitfor_pkgmgmt_blockingproc_list:
   - '\/var\/lib\/dpkg'
   - '\/var\/lib\/fwupd'
   - '\/var\/lib\/PackageKit'
-  - \/var\/cache\/apt
-  - \/var\/cache\/debconf
-  - \/var\/lib\/apt
-  - \/var\/lib\/dpkg
-  - \/var\/lib\/fwupd
-  - \/var\/lib\/PackageKit
