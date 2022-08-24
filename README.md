@@ -1,8 +1,7 @@
 Ansible Role: ansible_role_waitfor_pkgmgmt
 =========
 
-An Ansible role that wait for packagemanagemt processes. Can be included in playbooks/roles if there is a need to check for apt/yum/etc. processes before continuing with other tasks.
-This role should support the following Linux distributions.
+Wait for packagemanagemt processes. Can be included in playbooks/roles if there is a need to check for apt/yum/etc. processes before continuing with other tasks. This role should support the following Linux distributions:
 
 <ul>
 <li>Fedora
@@ -15,7 +14,7 @@ This role should support the following Linux distributions.
 Requirements
 ------------
 
-No special requirements is needed for the role.
+None.
 
 Role Variables
 --------------
@@ -34,7 +33,7 @@ Delay in seconds between retries.
 Dependencies
 ------------
 
-This role has no external dependencies.
+None.
 
 Example Playbook
 ----------------
