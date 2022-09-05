@@ -1,0 +1,4 @@
+---
+
+ansible_role_waitfor_pkgmgmt_blockingproc_list:
+  - '\/usr\/lib\/sysimage\/rpm'
